@@ -24,6 +24,7 @@ export default function Home() {
             lubricantes, accesorios y más.</p>
 
         </div>
+        <button>Contáctanos</button>
       </section>
       <section id='miedos'>
 
