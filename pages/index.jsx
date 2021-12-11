@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import NavBar from './shared/navbar'
@@ -22,9 +23,11 @@ export default function Home() {
           </h1>
           <p className='subtitle'>Te ofrecemos motos, repuestos,
             lubricantes, accesorios y más.</p>
+          <button>Contáctanos</button>
+          div.
+          <img src="/img/hero_main_816x603.png" alt="" />
 
         </div>
-        <button>Contáctanos</button>
       </section>
       <section id='miedos'>
 
