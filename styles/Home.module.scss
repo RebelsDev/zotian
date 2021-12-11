@@ -5,6 +5,35 @@
 }
 
 #hero {
-  color: crimson;
+  .container {
+    min-height: 92vh;
+    position: relative;
+  }
   text-align: center !important;
+  .hero_img {
+    padding-top: 30px;
+  }
+}
+
+#miedos {
+  text-align: center !important;
+  background-color: $accent-color;
+  h2,
+  p {
+    color: white;
+  }
+
+  p{
+    margin: auto;
+    width: 80%;
+  }
+  img{
+    width: 50%;
+    padding-bottom: 6px;
+  }
+  .miedos_elements{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

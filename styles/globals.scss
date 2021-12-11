@@ -22,25 +22,38 @@ img{
     height: auto;
 }
 
-h1{
+h1,h2{
     font-family:'Cocogoose', Arial, Helvetica, sans-serif;
     color: $accent-color;
+    margin-top: 0;
+
+}
+
+h1{
+    line-height: 110%;
+}
+
+h2{
+    font-size: 18px;
+    line-height: 120%;
 }
 
 p{
+    color: $gray;
     font-family:'Cabify Circular', Arial, Helvetica, sans-serif;
 }
 
 p.subtitle{
-    color: $gray;
-    font-size: 22px;
+    font-size: 17px;
+    line-height: 120%;
+
 }
 
 button{
     appearance: none;
     font-family:'Cocogoose', Arial, Helvetica, sans-serif;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     padding: 15px 30px;
     color: white;
     background-color: $accent-color;

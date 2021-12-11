@@ -24,13 +24,41 @@ export default function Home() {
           <p className='subtitle'>Te ofrecemos motos, repuestos,
             lubricantes, accesorios y más.</p>
           <button>Contáctanos</button>
-          div.
-          <img src="/img/hero_main_816x603.png" alt="" />
+          <div className={styles.hero_img}>
+            <img src="/img/hero_main_816x603.png" alt="" />
+          </div>
 
         </div>
       </section>
-      <section id='miedos'>
+      <section id={styles.miedos}>
+        <div className={styles.container}>
+          <h2>
+            Estas buscando comprar
+            una motocicleta o hacerle
+            mantenimiento y
+            te ha pasado que...
+          </h2>
+          <div className={styles.miedos_elements}>
+            <div className={styles.miedo_element}>
+              <img src="/img/miedos_1_478x478.png" height={478} width={478} alt="Profesional" />
+              <p>No encuentras un lugar profesional
+                con un servicio completo.</p>
 
+
+            </div>
+            <div className={styles.miedo_element}>
+              <img src="/img/miedos_2_479x478.png" height={479} width={478} alt="Moto" />
+              <p>El funcionamiento de tu moto
+                no mejora a pesar de varias
+                revisiones.</p>
+            </div>
+            <div className={styles.miedo_element}>
+              <img src="/img/miedos_3_479x479.png" height={479} width={479} alt="Garantía" />
+              <p>Ningun lugar te inspira
+                confianza ni te ofrece garantía.</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id='deseos'>
 
