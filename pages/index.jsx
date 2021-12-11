@@ -60,11 +60,62 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id='deseos'>
+      <section id={styles.deseos}>
+        <div className={styles.container}>
+          <h2>
+            Sin embargo, te gustaría
+          </h2>
+          <div className={styles.deseos_elements}>
+            <div className={styles.deseos_element}>
+              <img src="/img/deseos_1_416x511.png" height={416} width={511} alt="Técnicos expertos" />
+              <p>Orientación y asesoría
+                de la mano de técnicos
+                expertos.</p>
+            </div>
+            <div className={styles.deseos_element}>
+              <img src="/img/deseos_2_415x511.png" height={415} width={511} alt="Información detallada" />
+              <p>Información clara
+                y detallada de los
+                productos que ofrecen.</p>
+            </div>
+            <div className={styles.deseos_element}>
+              <img src="/img/deseos_3_419x511.png" height={419} width={511} alt="Información detallada" />
+              <p>Información clara
+                y detallada de los
+                productos que ofrecen.</p>
+            </div>
+          </div>
+        </div>
 
       </section>
-      <section id='quien_soy'>
+      <section id={styles.quien_soy}>
+        <div className={styles.container}>
 
+          <div className={styles.quien_soy_text}>
+
+            <h2>Somos Zotian</h2>
+            <p>
+              Somos una empresa de trayectoria
+              en el mercado peruano.
+            </p>
+            <p>
+              Queremos ayudar a más personas
+              amantes de las motocicletas a
+              encontrar todo lo que necesitan
+              para disfrutar su pasión
+              en un solo lugar.
+            </p>
+            <p>
+              Si necesitas un servicio completo
+              de calidad, con mantenimiento,
+              garantía y asesoramiento...
+            </p>
+            <p className={styles.last}>
+              !Estas en el lugar correcto!
+            </p>
+          </div>
+        </div>
+        <img src="/img/quien_soy_1_1800x1195.png" height={1800} width={1195} alt="Zotian Moto" />
       </section>
       <section id='propuesta'>
 

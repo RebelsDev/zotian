@@ -37,3 +37,61 @@
     gap: 20px;
   }
 }
+
+#deseos{
+  text-align: center;
+  h2{
+    color:$dark-blue;
+  }
+  img{
+    width: 85%;
+    // padding-bottom: 3px;
+  }
+  p{
+    margin: auto;
+    width: 70%;
+  }
+  .deseos_elements{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+#quien_soy{
+  position: relative;
+
+  overflow: hidden;
+  // background-color: black;
+  .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    min-height: 100vh;
+  }
+  h2{
+    font-size: 50px;
+    margin-bottom: 0%;
+    color: white !important;
+    font-family: 'AkiraExpanded-SuperBold',Arial, Helvetica, sans-serif;
+  }
+  p{
+    line-height: 120%;
+    color: white;
+  }
+  p.last{
+    margin-bottom: 0%;
+  }
+  img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
