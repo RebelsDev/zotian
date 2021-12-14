@@ -219,7 +219,7 @@ export default function Home() {
         <section id={styles.testimonios}>
           <div className={styles.container}>
             <h2>
-              Nuestros clientes
+              Nuestros<br/> clientes
             </h2>
             <div className={styles.testimonios_elements}>
               <div className={styles.testimonio_element}>
