@@ -155,12 +155,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <img src="/img/testimonios_bg.png" alt="" />
+        {/* <img src="/img/testimonios_bg.png" alt="" /> */}
 
 
       </section>
         <section id={styles.lead_magnet}>
-
+        {/* <div className={styles.container}>
+          <h2>LAS 10
+            mejores
+            motos
+            para
+            principiantes  </h2>
+          <button>
+            Descargar
+          </button>
+        </div> */}
       </section>
       <section id={styles.hero_footer}>
 

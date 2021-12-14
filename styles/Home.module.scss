@@ -147,3 +147,17 @@
     z-index: -1;
   }
 }
+
+#lead_magnet{
+  background-color: $accent-color;
+  h2{
+    font-family: 'Akira Expanded', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+
+  }
+  button{
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+  }
+}
