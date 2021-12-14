@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Slider from "react-slick";
+import React, { useState } from 'react'
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import styles from '../styles/Home.module.scss';
@@ -8,6 +9,9 @@ import Footer from './shared/footer';
 import NavBar from './shared/navbar';
 
 export default function Home() {
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -143,7 +147,9 @@ export default function Home() {
           <div className={styles.container}>
             <h2>Conversa con uno de nuestros asesores de ventas</h2>
             <div id="main-slider" className={styles.main_slider}>
-              <Slider {...settings}>
+              <Slider {...settings}
+                asNavFor={nav2}
+                ref={slider => (setNav1(slider))}>
                 <div className={styles.img_slider}>
                   <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
                 </div>
@@ -171,7 +177,13 @@ export default function Home() {
               </Slider>
             </div>
             <div id="secondary-slider" className={styles.secondary_slider}>
-              <Slider {...settings_sec}>
+              <Slider
+                {...settings_sec}
+                asNavFor={nav1}
+                ref={slider => (setNav2(slider))}
+                swipeToSlide={true}
+                focusOnSelect={true}
+              >
                 <div className={styles.img_slider_sec}>
                   <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
                 </div>
