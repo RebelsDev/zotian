@@ -61,11 +61,13 @@ button {
     box-shadow: rgba(100, 100, 111, 0.6) 0px 0px 29px 0px;
 }
 
-#secondary-slider{
-    .slick-prev, .slick-next {
+#secondary-slider {
+    .slick-prev,
+    .slick-next {
         background-color: white !important;
     }
-    .slick-prev:before, .slick-next:before {
+    .slick-prev:before,
+    .slick-next:before {
         // background-color: white !important;
         opacity: 1;
         margin: -4px;
@@ -74,6 +76,23 @@ button {
         left: 0;
         font-size: 30px;
         color: $black-alt !important;
+    }
+}
+
+#mobile {
+    display: block;
+}
+
+#desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: block;
     }
 }
 

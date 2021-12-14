@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
+import React, { useState } from 'react';
 import Slider from "react-slick";
-import React, { useState } from 'react'
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import styles from '../styles/Home.module.scss';
@@ -25,7 +25,37 @@ export default function Home() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 2024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 468,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+
+    ]
   };
   return (
     <div >
@@ -148,36 +178,43 @@ export default function Home() {
         </section>
         <section id={styles.propuesta}>
           <div className={styles.container}>
-            <h2>Conversa con uno de nuestros asesores de ventas</h2>
-            <div id="main-slider" className={styles.main_slider}>
-              <Slider {...settings}
-                asNavFor={nav2}
-                ref={slider => (setNav1(slider))}>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto2.png" alt="PATAGONIA 169" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto3.png" alt="BENELLI 180S" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto4.png" alt="BENELLI TNT150I" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto5.png" alt="BAJAJ CT125" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto6.png" alt="BENELLI TNT25" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto7.png" alt="BENELLI 302S" />
-                </div>
-                <div className={styles.img_slider}>
-                  <img src="/img/propuesta_producto8.png" alt="SUPERLIGHT 200" />
-                </div>
-              </Slider>
+            <div className={styles.propuesta_hero}>
+              <div className={styles.propuesta_title}>
+                <h2>Conversa con uno de nuestros asesores de ventas</h2>
+                <button id="desktop">Contactanos</button>
+
+              </div>
+
+              <div id="main-slider" className={styles.main_slider}>
+                <Slider {...settings}
+                  asNavFor={nav2}
+                  ref={slider => (setNav1(slider))}>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto2.png" alt="PATAGONIA 169" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto3.png" alt="BENELLI 180S" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto4.png" alt="BENELLI TNT150I" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto5.png" alt="BAJAJ CT125" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto6.png" alt="BENELLI TNT25" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto7.png" alt="BENELLI 302S" />
+                  </div>
+                  <div className={styles.img_slider}>
+                    <img src="/img/propuesta_producto8.png" alt="SUPERLIGHT 200" />
+                  </div>
+                </Slider>
+              </div>
             </div>
             <div id="secondary-slider" className={styles.secondary_slider}>
               <Slider
@@ -213,7 +250,7 @@ export default function Home() {
                 </div>
               </Slider>
             </div>
-            <button>
+            <button id="mobile">
               Contáctanos
             </button>
 
@@ -221,9 +258,13 @@ export default function Home() {
         </section>
         <section id={styles.testimonios}>
           <div className={styles.container}>
-            <h2>
-              Nuestros<br/> clientes
+            <h2 id="mobile">
+              Nuestros<br /> clientes
             </h2>
+            <h2 id="desktop">
+              Nuestros clientes
+            </h2>
+
             <div className={styles.testimonios_elements}>
               <div className={styles.testimonio_element}>
                 <p>“Definitivamente recomendaría
