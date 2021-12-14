@@ -1,0 +1,27 @@
+@import "variables.module";
+
+#Terminos{
+    .container {
+        padding: 40px 8vw;
+    }
+    h1,h2{
+        font-weight: bold;
+        color: $gray;
+    }
+    h1,h2,p{
+        font-family: 'Cabify Circular';
+        font-size: 16px;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        font-weight: lighter;
+        line-height: 120%;
+        text-align: justify;
+  text-justify: inter-word;
+    }
+    span{
+        font-weight: bold;
+    }
+}
