@@ -103,6 +103,29 @@
     font-size: 22px;
     color: white;
   }
+  .img_slider_sec{
+    padding: 10px;
+
+  }
+  .main_slider{
+    padding-bottom: 20px;
+    button{
+      display: none !important;
+    }
+  }
+  .secondary_slider{
+    padding-bottom: 30px;
+    button{
+      box-shadow: none !important;
+
+    }
+    .slick-prev, .slick-next {
+      color: white !important;
+    }
+    .slick-prev:before, .slick-next:before {
+      background-color: white !important;
+    }
+  }
   button{
     font-size: 24px;
   }

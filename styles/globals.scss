@@ -61,6 +61,22 @@ button {
     box-shadow: rgba(100, 100, 111, 0.6) 0px 0px 29px 0px;
 }
 
+#secondary-slider{
+    .slick-prev, .slick-next {
+        background-color: white !important;
+    }
+    .slick-prev:before, .slick-next:before {
+        // background-color: white !important;
+        opacity: 1;
+        margin: -4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        color: $black-alt !important;
+    }
+}
+
 @font-face {
     font-family: "Cabify Circular";
     src: local("Cabify Circular Book"), local("CabifyCircular-Book"),
