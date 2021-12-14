@@ -204,6 +204,10 @@
 }
 
 @media (min-width: 768px) {
+  .container{
+  padding: 90px 8vw;
+
+  }
   #hero {
     // height: 95vh;
     width: 100%;
@@ -219,21 +223,21 @@
       }
       h1 {
         margin-top: 3vh;
-        width: 70%;
+        // width: 80%;
         // 40px a 75px
-        font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4.6875rem);
+        font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4rem);
         margin-bottom: 0px;
       }
       p {
         margin-top: 3vh;
-        width: 55%;
+        // width: 85%;
         // 30 a 45px
-        font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.8125rem);
+        font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.1125rem);
       }
       button {
         padding: 20px 45px;
         // 22 a 35
-        font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.1875rem);
+        font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.0875rem);
       }
     }
     .hero_img {
@@ -252,24 +256,25 @@
   }
   #miedos {
     p {
-      font-size: 18px;
+      font-size: clamp(1.125rem, 0.875rem + 0.5208vw, 1.5rem);
       line-height: 130%;
       margin: auto;
       width: 70%;
     }
     h2 {
-      font-size: 30px;
+      font-size: clamp(1.875rem, 1.4583rem + 0.8681vw, 2.5rem);
     }
 
     img {
-      width: 50%;
-      height: 200px;
-      width: 200px;
+      width: 55%;
+      // height: 200px;
+      // width: 200px;
 
       padding-bottom: 6px;
       margin: 20px 0px;
     }
     .miedos_elements {
+      padding-top: 30px;
       // width: 70%;
       display: flex;
       flex-direction: row;
@@ -277,23 +282,37 @@
 
       gap: 20px;
     }
+    .miedo_element {
+      width: 33%;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: center;
+
+      // gap: 20px;
+    }
   }
 
   #deseos {
     h2 {
-      font-size: 30px;
+      font-size: clamp(1.875rem, 1.4583rem + 0.8681vw, 2.5rem);
     }
     img {
-      width: 220px;
+      width: 70%;
+      padding-bottom: 2vh;
     }
 
     p {
-      font-size: 18px;
+      font-size: clamp(1.125rem, 0.875rem + 0.5208vw, 1.5rem);
     }
     .deseos_elements {
+      margin-left: auto;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       gap: 20px;
+    }
+    .deseos_element{
+      width: 33%;
     }
   }
 
@@ -302,19 +321,24 @@
       display: flex;
       width: 50%;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+
+
+      margin: auto;
+      width: 100%;
+      max-width: 1500px;
 
       min-height: 100vh;
     }
     h2 {
-      font-size: 50px;
+      font-size: clamp(3.125rem, 2.2917rem + 1.7361vw, 4.375rem);
       margin-bottom: 0%;
       color: white !important;
       font-family: "Akira Expanded", Arial, Helvetica, sans-serif;
     }
     p {
-      font-size: 18px;
+      font-size: clamp(1.125rem, 0.8333rem + 0.6076vw, 1.5625rem);
       line-height: 120%;
       color: white;
     }
@@ -332,6 +356,10 @@
     }
   }
   #propuesta {
+    .container {
+      margin: auto;
+      max-width: 1300px;
+    }
     .propuesta_hero {
       display: flex;
       flex-direction: row-reverse;
@@ -352,7 +380,7 @@
       align-items: flex-start;
     }
     h2 {
-      font-size: 33px;
+      font-size: clamp(2.0625rem, 1.7708rem + 0.6076vw, 2.5rem);
     }
   }
 
@@ -360,6 +388,10 @@
     h2 {
       color: white;
       font-size: 53px;
+    }
+    .container{
+      margin: auto;
+      max-width: 1500px;
     }
 
     .testimonios_elements {
@@ -387,7 +419,7 @@
         // padding-bottom: 30px;
         margin: auto;
         width: 70%;
-        font-size: 26px;
+        font-size: clamp(1.625rem, 1.2917rem + 0.6944vw, 2.125rem);
         line-height: 120%;
         color: white;
       }
@@ -398,7 +430,7 @@
       left: 0%;
       height: 100%;
       width: 100%;
-      // object-fit: cover;
+      object-fit: cover;
       transform: scale(1.01);
 
       z-index: -1;
@@ -414,7 +446,7 @@
     }
     h2 {
       font-family: "Akira Expanded", Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 25px;
+      font-size: clamp(1.5625rem, 0.9375rem + 1.3021vw, 2.5rem);
       margin-bottom: 0;
       // color: black;
       color: white;
@@ -432,16 +464,17 @@
   #hero_footer {
     position: relative;
     text-align: end;
-    .container{
+    .container {
       height: 90vh;
     }
     h2 {
       margin: auto;
       margin-right: 0;
       margin-top: 3vh;
-      width: 70%;
+      width: 60%;
       // 40px a 75px
-      font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4.6875rem);
+      font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4rem);
+
       margin-bottom: 0px;
     }
     p {
@@ -451,21 +484,30 @@
       margin-top: 3vh;
       width: 55%;
       // 30 a 45px
-      font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.8125rem);
+      font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.1125rem);
     }
     button {
       padding: 20px 45px;
       // 22 a 35
-      font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.1875rem);
+      font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.0875rem);
     }
     img {
       position: absolute;
+      left: -4px;
       bottom: 0%;
-      width: 60%;
+      width: 50%;
       display: block;
       margin: 0;
       padding: 0;
-      transform: scale(1.01);
+      transform: scale(1);
+    }
+  }
+}
+@media (min-width: 2400px) {
+  #propuesta {
+    .container {
+      margin: auto;
+      max-width: 1700px;
     }
   }
 }

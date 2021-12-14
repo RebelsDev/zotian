@@ -15,6 +15,7 @@ export default function Home() {
   const settings = {
     dots: false,
     infinite: true,
+    fade: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
@@ -37,7 +38,7 @@ export default function Home() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 2024,
+        breakpoint: 4024,
         settings: {
           slidesToShow: 6,
           slidesToScroll: 1,
@@ -82,12 +83,14 @@ export default function Home() {
             <div className={styles.hero_text}>
 
               <h1>
-                Contamos con todo
-                lo necesario para
-                que puedas disfrutar
-                de tu pasión motera sin fronteras.
+                Contamos con todo<br />
+                lo necesario para que<br />
+                puedas disfrutar de<br />
+                tu pasión motera<br />
+                sin fronteras.<br />
+
               </h1>
-              <p className='subtitle'>Te ofrecemos motos, repuestos,
+              <p className='subtitle'>Te ofrecemos motos, repuestos,<br />
                 lubricantes, accesorios y más.</p>
               <button>Contáctanos</button>
             </div>
@@ -102,7 +105,7 @@ export default function Home() {
           <div className={styles.container}>
             <h2>
               Estas buscando comprar
-              una motocicleta o hacerle
+              una motocicleta<br /> o hacerle
               mantenimiento y
               te ha pasado que...
             </h2>
@@ -161,21 +164,21 @@ export default function Home() {
 
             <div className={styles.quien_soy_text}>
 
-              <h2>Somos Zotian</h2>
+              <h2>Somos <br />Zotian</h2>
               <p>
-                Somos una empresa de trayectoria
+                Somos una empresa de trayectoria<br />
                 en el mercado peruano.
               </p>
               <p>
-                Queremos ayudar a más personas
-                amantes de las motocicletas a
-                encontrar todo lo que necesitan
-                para disfrutar su pasión
+                Queremos ayudar a más personas<br />
+                amantes de las motocicletas a<br />
+                encontrar todo lo que necesitan<br />
+                para disfrutar su pasión<br />
                 en un solo lugar.
               </p>
               <p>
-                Si necesitas un servicio completo
-                de calidad, con mantenimiento,
+                Si necesitas un servicio completo<br />
+                de calidad, con mantenimiento,<br />
                 garantía y asesoramiento...
               </p>
               <p className={styles.last}>
@@ -344,12 +347,12 @@ export default function Home() {
         <section id={styles.hero_footer}>
           <div className={styles.container}>
             <h2>
-              ¿Estas listo para
-              disfrutar de tu
+              ¿Estas listo para<br />
+              disfrutar de tu<br />
               pasión motera?
             </h2>
             <p>
-              Escríbenos para conocer cuales
+              Escríbenos para conocer cuales<br/>
               son tus problemas y necesidades
             </p>
             <button>
@@ -357,7 +360,7 @@ export default function Home() {
             </button>
 
           </div>
-          <img src="/img/hero_footer_bg_mobile.png" alt="" />
+          <img src="/img/hero_footer_main_1095x917.png" alt="" />
         </section>
 
       </main>
