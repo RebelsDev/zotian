@@ -9,9 +9,10 @@ const Modal = (props) => {
     const formId = '1'
 
     const onSubmit = async (data) => {
-        handleActiveCampaignSubmit(data, 'diegofarfan', formId)
+        handleActiveCampaignSubmit(data, 'zotian1', formId)
         console.log(data);
-        router.push("/reserva-una-cita")
+        window.location.assign('https://wa.me/924523178')
+
     }
 
     if (!props.show) {

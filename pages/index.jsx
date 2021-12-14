@@ -99,7 +99,7 @@ export default function Home() {
               </h1>
               <p className='subtitle'>Te ofrecemos motos, repuestos,<br />
                 lubricantes, accesorios y más.</p>
-              <button>Contáctanos</button>
+              <button onClick={() => setShowModal(true)}>Contáctanos</button>
             </div>
 
             <div className={styles.hero_img}>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className={styles.propuesta_hero}>
               <div className={styles.propuesta_title}>
                 <h2>Conversa con uno de nuestros asesores de ventas</h2>
-                <button id="desktop">Contactanos</button>
+                <button onClick={()=> setShowModal(true)} id="desktop">Contactanos</button>
 
               </div>
 
@@ -269,7 +269,7 @@ export default function Home() {
                 </div>
               </Slider>
             </div>
-            <button id="mobile">
+            <button onClick={()=> setShowModal(true)} id="mobile">
               Contáctanos
             </button>
 
@@ -346,7 +346,7 @@ export default function Home() {
               motos
               para
               principiantes  </h2>
-            <button>
+            <button onClick={()=> setShowModal(true)}>
               Descargar
             </button>
           </div>
@@ -362,7 +362,7 @@ export default function Home() {
               Escríbenos para conocer cuales<br/>
               son tus problemas y necesidades
             </p>
-            <button>
+            <button onClick={()=> setShowModal(true)}>
               Contáctanos
             </button>
 
