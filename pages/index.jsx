@@ -20,6 +20,15 @@ export default function Home() {
     slidesToScroll: 1
   };
 
+  const settings_fade = {
+    dots: false,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   const settings_sec = {
     dots: false,
     infinite: true,
@@ -265,24 +274,54 @@ export default function Home() {
               Nuestros clientes
             </h2>
 
-            <div className={styles.testimonios_elements}>
-              <div className={styles.testimonio_element}>
-                <p>“Definitivamente recomendaría
-                  Zotian, tienen la mejor atención
-                  que jamas he recibido”</p>
-                <h3>Andy Lopez</h3>
+            <div className={styles.testimonios_elements} >
+              <div id='mobile'>
+                <div className={styles.testimonio_element}>
+                  <p>“Definitivamente recomendaría
+                    Zotian, tienen la mejor atención
+                    que jamas he recibido”</p>
+                  <h3>Andy Lopez</h3>
+                </div>
+
+                <div className={styles.testimonio_element}>
+                  <p>“Las motos cuentan con una
+                    garantía que te da una gran
+                    confianza por el servicio”</p>
+                  <h3>dany morelo</h3>
+                </div>
+
+                <div className={styles.testimonio_element}>
+                  <p>“El servicio brindado por Zotian fue excelente, lo recomiendo totalmente a quienes amen el mundo de las motos”</p>
+                  <h3>MIGUEL FLORES</h3>
+                </div>
+
               </div>
 
-              <div className={styles.testimonio_element}>
-                <p>“Las motos cuentan con una
-                  garantía que te da una gran
-                  confianza por el servicio”</p>
-                <h3>dany morelo</h3>
-              </div>
+              <div id='desktop'>
 
-              <div className={styles.testimonio_element}>
-                <p>“El servicio brindado por Zotian fue excelente, lo recomiendo totalmente a quienes amen el mundo de las motos”</p>
-                <h3>MIGUEL FLORES</h3>
+                <div id='secondary-slider' className={styles.secondary_slider}>
+
+                  <Slider {...settings_fade}>
+                    <div className={styles.testimonio_element}>
+                      <p>“Definitivamente recomendaría
+                        Zotian, tienen la mejor atención
+                        que jamas he recibido”</p>
+                      <h3>Andy Lopez</h3>
+                    </div>
+
+                    <div className={styles.testimonio_element}>
+                      <p>“Las motos cuentan con una
+                        garantía que te da una gran
+                        confianza por el servicio”</p>
+                      <h3>dany morelo</h3>
+                    </div>
+
+                    <div className={styles.testimonio_element}>
+                      <p>“El servicio brindado por Zotian fue excelente, lo recomiendo totalmente a quienes amen el mundo de las motos”</p>
+                      <h3>MIGUEL FLORES</h3>
+                    </div>
+                  </Slider>
+                </div>
               </div>
             </div>
           </div>
