@@ -117,16 +117,52 @@ export default function Home() {
         </div>
         <img src="/img/quien_soy_1_1800x1195.png" height={1800} width={1195} alt="Zotian Moto" />
       </section>
-      <section id='propuesta'>
+      <section id={styles.propuesta}>
+        <div className={styles.container}>
+          <h2>Conversa con uno de nuestros asesores de ventas</h2>
+          <div className={styles.slider}>
+
+          </div>
+          <button>
+            Contáctanos
+          </button>
+
+        </div>
+      </section>
+      <section id={styles.testimonios}>
+        <div className={styles.container}>
+          <h2>
+            Nuestros clientes
+          </h2>
+          <div className={styles.testimonios_elements}>
+            <div className={styles.testimonio_element}>
+              <p>“Definitivamente recomendaría
+                Zotian, tienen la mejor atención
+                que jamas he recibido”</p>
+              <h3>Andy Lopez</h3>
+            </div>
+
+            <div className={styles.testimonio_element}>
+              <p>“Las motos cuentan con una
+                garantía que te da una gran
+                confianza por el servicio”</p>
+              <h3>dany morelo</h3>
+            </div>
+
+            <div className={styles.testimonio_element}>
+              <p>“El servicio brindado por Zotian fue excelente, lo recomiendo totalmente a quienes amen el mundo de las motos”</p>
+              <h3>MIGUEL FLORES</h3>
+            </div>
+          </div>
+        </div>
+        <img src="/img/testimonios_bg.png" alt="" />
+
 
       </section>
-      <section id='testimonios'>
+        <section id={styles.lead_magnet}>
 
       </section>
-      <section id='lead_magnet'>
-
-      </section>
-      <section id='hero_footer'>
+      <section id={styles.hero_footer}>
 
       </section>
       <main>
