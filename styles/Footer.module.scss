@@ -1,0 +1,26 @@
+
+
+.footer{
+    .container {
+        padding: 30px 8vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    background-color: black;
+    color: white;
+    .links{
+        p{
+            margin-top: 0;
+            font-size: 16px !important;
+            color: white !important;
+        }
+        p#last{
+            margin-bottom: 0;
+        }
+    }
+    .copyright{
+        text-align: end;
+        font-family: 'Akira Expanded';
+        font-size: 20px;
+    }
+}

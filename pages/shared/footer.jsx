@@ -1,4 +1,4 @@
-import styles from '../../styles/Navbar.module.scss'
+import styles from '../../styles/Footer.module.scss'
 
 export default function Footer() {
     return (
@@ -6,7 +6,7 @@ export default function Footer() {
             <div className={styles.container}>
                 <div className={styles.links}>
                     <p>Política de privacidad</p>
-                    <p>Términos y condiciones</p>
+                    <p id={styles.last}>Términos y condiciones</p>
 
                 </div>
                 <div className={styles.copyright}>
