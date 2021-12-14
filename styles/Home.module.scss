@@ -23,47 +23,47 @@
     color: white;
   }
 
-  p{
+  p {
     margin: auto;
     width: 80%;
   }
-  img{
+  img {
     width: 50%;
     padding-bottom: 6px;
   }
-  .miedos_elements{
+  .miedos_elements {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 }
 
-#deseos{
+#deseos {
   text-align: center;
-  h2{
-    color:$dark-blue;
+  h2 {
+    color: $dark-blue;
   }
-  img{
+  img {
     width: 85%;
     // padding-bottom: 3px;
   }
-  p{
+  p {
     margin: auto;
     width: 70%;
   }
-  .deseos_elements{
+  .deseos_elements {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 }
 
-#quien_soy{
+#quien_soy {
   position: relative;
 
   overflow: hidden;
   // background-color: black;
-  .container{
+  .container {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -72,20 +72,20 @@
 
     min-height: 100vh;
   }
-  h2{
+  h2 {
     font-size: 50px;
     margin-bottom: 0%;
     color: white !important;
-    font-family: 'Akira Expanded',Arial, Helvetica, sans-serif;
+    font-family: "Akira Expanded", Arial, Helvetica, sans-serif;
   }
-  p{
+  p {
     line-height: 120%;
     color: white;
   }
-  p.last{
+  p.last {
     margin-bottom: 0%;
   }
-  img{
+  img {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -96,71 +96,71 @@
   }
 }
 
-#propuesta{
+#propuesta {
   background-color: $black-alt;
   text-align: center;
-  h2{
+  h2 {
     font-size: 22px;
     color: white;
   }
-  .img_slider_sec{
+  .img_slider_sec {
     padding: 10px;
-
   }
-  .main_slider{
+  .main_slider {
     padding-bottom: 20px;
-    button{
+    button {
       display: none !important;
     }
   }
-  .secondary_slider{
+  .secondary_slider {
     padding-bottom: 30px;
-    button{
+    button {
       box-shadow: none !important;
-
     }
-    .slick-prev, .slick-next {
+    .slick-prev,
+    .slick-next {
       color: white !important;
     }
-    .slick-prev:before, .slick-next:before {
+    .slick-prev:before,
+    .slick-next:before {
       background-color: white !important;
     }
   }
-  button{
+  button {
     font-size: 24px;
   }
 }
 
-#testimonios{
+#testimonios {
   overflow: hidden;
   position: relative;
   text-align: center;
-  h2{
+  h2 {
     color: white;
     font-size: 33px;
   }
 
-  .testimonios_elements{
+  .testimonios_elements {
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding-bottom: 40px;
   }
-  .testimonio_element{
+  .testimonio_element {
     box-shadow: rgba(100, 100, 111, 0.6) 0px 0px 29px 0px;
     padding: 10px 30px;
     border-radius: 40px;
     background-color: $accent-color;
     color: white !important;
-    h3{
+    h3 {
       font-size: 13px;
-      font-family: 'Akira Expanded',Verdana, Geneva, Tahoma, sans-serif;
+      font-family: "Akira Expanded", Verdana, Geneva, Tahoma, sans-serif;
     }
-    p{
+    p {
       color: white;
     }
   }
-  img{
+  img {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -172,34 +172,164 @@
   }
 }
 
-#lead_magnet{
+#lead_magnet {
   background-color: $accent-color;
-  h2{
-    font-family: 'Akira Expanded', Verdana, Geneva, Tahoma, sans-serif;
+  h2 {
+    font-family: "Akira Expanded", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     // color: black;
     color: white;
-
   }
-  button{
+  button {
     background-color: white;
     text-transform: uppercase;
-    font-family: 'Akira Expanded', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Akira Expanded", Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     font-size: 20px;
   }
 }
 
-#hero_footer{
+#hero_footer {
   position: relative;
   text-align: end;
-  h2{
+  h2 {
     font-size: 24px;
   }
-  img{
+  img {
     display: block;
     margin: 0;
     padding: 0;
     transform: scale(1.01);
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    // height: 95vh;
+    width: 100%;
+    .container {
+      height: 95vh;
+
+      position: relative;
+      text-align: left;
+      display: flex;
+      width: 100%;
+
+      .hero_text {
+      }
+      h1 {
+        margin-top: 3vh;
+        width: 70%;
+        // 40px a 75px
+        font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4.6875rem);
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 3vh;
+        width: 55%;
+        // 30 a 45px
+        font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.8125rem);
+      }
+      button {
+        padding: 20px 45px;
+        // 22 a 35
+        font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.1875rem);
+      }
+    }
+    .hero_img {
+      img {
+        margin: auto;
+        // margin-right: 30px;
+      }
+      width: 43%;
+      position: absolute;
+      right: 2%;
+      bottom: 2%;
+      display: flex;
+      // justify-content: end;
+      align-items: flex-end;
+    }
+  }
+  #miedos {
+    p {
+      font-size: 18px;
+      line-height: 130%;
+      margin: auto;
+      width: 70%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+
+    img {
+      width: 50%;
+      height: 200px;
+      width: 200px;
+
+      padding-bottom: 6px;
+      margin: 20px 0px;
+    }
+    .miedos_elements {
+      // width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      gap: 20px;
+    }
+  }
+
+  #deseos {
+    h2 {
+      font-size: 30px;
+    }
+    img {
+      width: 220px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    .deseos_elements {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  #quien_soy {
+
+    .container {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 100vh;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 0%;
+      color: white !important;
+      font-family: "Akira Expanded", Arial, Helvetica, sans-serif;
+    }
+    p {
+      font-size: 18px;
+      line-height: 120%;
+      color: white;
+    }
+    p.last {
+      margin-bottom: 0%;
+    }
+    img {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
   }
 }

@@ -40,16 +40,19 @@ export default function Home() {
 
         <section id={styles.hero}>
           <div className={styles.container}>
+            <div className={styles.hero_text}>
 
-            <h1>
-              Contamos con todo
-              lo necesario para
-              que puedas disfrutar
-              de tu pasión motera sin fronteras.
-            </h1>
-            <p className='subtitle'>Te ofrecemos motos, repuestos,
-              lubricantes, accesorios y más.</p>
-            <button>Contáctanos</button>
+              <h1>
+                Contamos con todo
+                lo necesario para
+                que puedas disfrutar
+                de tu pasión motera sin fronteras.
+              </h1>
+              <p className='subtitle'>Te ofrecemos motos, repuestos,
+                lubricantes, accesorios y más.</p>
+              <button>Contáctanos</button>
+            </div>
+
             <div className={styles.hero_img}>
               <img src="/img/hero_main_816x603.png" alt="" />
             </div>
@@ -66,20 +69,20 @@ export default function Home() {
             </h2>
             <div className={styles.miedos_elements}>
               <div className={styles.miedo_element}>
-                <img src="/img/miedos_1_478x478.png" height={478} width={478} alt="Profesional" />
+                <img src="/img/miedos_1.svg" height={400} width={400} alt="Profesional" />
                 <p>No encuentras un lugar profesional
                   con un servicio completo.</p>
 
 
               </div>
               <div className={styles.miedo_element}>
-                <img src="/img/miedos_2_479x478.png" height={479} width={478} alt="Moto" />
+                <img src="/img/miedos_2.svg" height={400} width={400} alt="Moto" />
                 <p>El funcionamiento de tu moto
                   no mejora a pesar de varias
                   revisiones.</p>
               </div>
               <div className={styles.miedo_element}>
-                <img src="/img/miedos_3_479x479.png" height={479} width={479} alt="Garantía" />
+                <img src="/img/miedos_3.svg" height={400} width={400} alt="Garantía" />
                 <p>Ningun lugar te inspira
                   confianza ni te ofrece garantía.</p>
               </div>
