@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Footer from './shared/footer'
 import NavBar from './shared/navbar'
 
 export default function Home() {
@@ -10,7 +11,10 @@ export default function Home() {
         <title>Zotian</title>
       </Head>
 
-      <NavBar></NavBar>
+      <nav>
+        <NavBar/>
+      </nav>
+      <main>
 
       <section id={styles.hero}>
         <div className={styles.container}>
@@ -155,12 +159,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <img src="/img/testimonios_bg.png" alt="" /> */}
+        <img src="/img/testimonios_bg.png" alt="" />
 
 
       </section>
         <section id={styles.lead_magnet}>
-        {/* <div className={styles.container}>
+        <div className={styles.container}>
           <h2>LAS 10
             mejores
             motos
@@ -169,13 +173,31 @@ export default function Home() {
           <button>
             Descargar
           </button>
-        </div> */}
+        </div>
       </section>
       <section id={styles.hero_footer}>
+        <div className={styles.container}>
+          <h2>
+            ¿Estas listo para
+            disfrutar de tu
+            pasión motera?
+          </h2>
+          <p>
+            Escríbenos para conocer cuales
+            son tus problemas y necesidades
+          </p>
+          <button>
+            Contáctanos
+          </button>
 
+        </div>
+        <img src="/img/hero_footer_bg_mobile.png" alt="" />
       </section>
-      <main>
+
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }
