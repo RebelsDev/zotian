@@ -5,13 +5,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import styles from '../styles/Home.module.scss';
+import Modal from './modal';
 import Footer from './shared/footer';
 import NavBar from './shared/navbar';
 
 export default function Home() {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
-
+  const [showModal, setShowModal] = useState(false)
   const settings = {
     dots: false,
     infinite: true,
@@ -76,6 +77,12 @@ export default function Home() {
       <nav>
         <NavBar />
       </nav>
+      <Modal
+        onClose={() => setShowModal(false)}
+        show={showModal}
+        title={"Ingresa tu correo electrónico para que puedas agendar una reunión con nosotros"}
+        actionName={"Contáctanos"}
+      />
       <main>
 
         <section id={styles.hero}>
