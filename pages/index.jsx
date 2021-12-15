@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             <div className={styles.hero_img}>
-              <img src="/img/hero_main_816x603.png" alt="" />
+              <img src="/img/hero_main_816x603.webp" alt="Moto Zotian Suzuki" />
             </div>
 
           </div>
@@ -145,19 +145,19 @@ export default function Home() {
             </h2>
             <div className={styles.deseos_elements}>
               <div className={styles.deseos_element}>
-                <img src="/img/deseos_1_416x511.png" height={416} width={511} alt="Técnicos expertos" />
+                <img src="/img/deseos_1_416x511.webp" height={416} width={511} alt="Técnicos expertos" />
                 <p>Orientación y asesoría
                   de la mano de técnicos
                   expertos.</p>
               </div>
               <div className={styles.deseos_element}>
-                <img src="/img/deseos_2_415x511.png" height={415} width={511} alt="Información detallada" />
+                <img src="/img/deseos_2_415x511.webp" height={415} width={511} alt="Información detallada" />
                 <p>Información clara
                   y detallada de los
                   productos que ofrecen.</p>
               </div>
               <div className={styles.deseos_element}>
-                <img src="/img/deseos_3_419x511.png" height={419} width={511} alt="Información detallada" />
+                <img src="/img/deseos_3_419x511.webp" height={419} width={511} alt="Información detallada" />
                 <p>Información clara
                   y detallada de los
                   productos que ofrecen.</p>
@@ -193,7 +193,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <img src="/img/quien_soy_1_1800x1195.png" height={1800} width={1195} alt="Zotian Moto" />
+          <img src="/img/quien_soy_1_1800x1195.webp" height={1800} width={1195} alt="Zotian Moto" />
         </section>
         <section id={styles.propuesta}>
           <div className={styles.container}>
@@ -209,28 +209,28 @@ export default function Home() {
                   asNavFor={nav2}
                   ref={slider => (setNav1(slider))}>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
+                    <img src="/img/propuesta_producto1.webp" alt="VIPER 200 DKR" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto2.png" alt="PATAGONIA 169" />
+                    <img src="/img/propuesta_producto2.webp" alt="PATAGONIA 169" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto3.png" alt="BENELLI 180S" />
+                    <img src="/img/propuesta_producto3.webp" alt="BENELLI 180S" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto4.png" alt="BENELLI TNT150I" />
+                    <img src="/img/propuesta_producto4.webp" alt="BENELLI TNT150I" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto5.png" alt="BAJAJ CT125" />
+                    <img src="/img/propuesta_producto5.webp" alt="BAJAJ CT125" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto6.png" alt="BENELLI TNT25" />
+                    <img src="/img/propuesta_producto6.webp" alt="BENELLI TNT25" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto7.png" alt="BENELLI 302S" />
+                    <img src="/img/propuesta_producto7.webp" alt="BENELLI 302S" />
                   </div>
                   <div className={styles.img_slider}>
-                    <img src="/img/propuesta_producto8.png" alt="SUPERLIGHT 200" />
+                    <img src="/img/propuesta_producto8.webp" alt="SUPERLIGHT 200" />
                   </div>
                 </Slider>
               </div>
@@ -244,28 +244,28 @@ export default function Home() {
                 focusOnSelect={true}
               >
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto1.png" alt="VIPER 200 DKR" />
+                  <img src="/img/propuesta_producto1.webp" alt="VIPER 200 DKR" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto2.png" alt="PATAGONIA 169" />
+                  <img src="/img/propuesta_producto2.webp" alt="PATAGONIA 169" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto3.png" alt="BENELLI 180S" />
+                  <img src="/img/propuesta_producto3.webp" alt="BENELLI 180S" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto4.png" alt="BENELLI TNT150I" />
+                  <img src="/img/propuesta_producto4.webp" alt="BENELLI TNT150I" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto5.png" alt="BAJAJ CT125" />
+                  <img src="/img/propuesta_producto5.webp" alt="BAJAJ CT125" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto6.png" alt="BENELLI TNT25" />
+                  <img src="/img/propuesta_producto6.webp" alt="BENELLI TNT25" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto7.png" alt="BENELLI 302S" />
+                  <img src="/img/propuesta_producto7.webp" alt="BENELLI 302S" />
                 </div>
                 <div className={styles.img_slider_sec}>
-                  <img src="/img/propuesta_producto8.png" alt="SUPERLIGHT 200" />
+                  <img src="/img/propuesta_producto8.webp" alt="SUPERLIGHT 200" />
                 </div>
               </Slider>
             </div>
@@ -335,7 +335,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <img src="/img/testimonios_bg.png" alt="" />
+          <img src="/img/testimonios_bg.webp" alt="Motociclista con casco Zotian" />
 
 
         </section>
@@ -367,7 +367,7 @@ export default function Home() {
             </button>
 
           </div>
-          <img src="/img/hero_footer_main_1095x917.png" alt="" />
+          <img src="/img/hero_footer_main_1095x917.webp" alt="Moto Zotian" />
         </section>
 
       </main>
