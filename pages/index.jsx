@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -200,7 +201,7 @@ export default function Home() {
             <div className={styles.propuesta_hero}>
               <div className={styles.propuesta_title}>
                 <h2>Conversa con uno de nuestros asesores de ventas</h2>
-                <button onClick={()=> setShowModal(true)} id="desktop">Contactanos</button>
+                <button onClick={() => setShowModal(true)} id="desktop">Contactanos</button>
 
               </div>
 
@@ -269,7 +270,7 @@ export default function Home() {
                 </div>
               </Slider>
             </div>
-            <button onClick={()=> setShowModal(true)} id="mobile">
+            <button onClick={() => setShowModal(true)} id="mobile">
               Contáctanos
             </button>
 
@@ -346,9 +347,14 @@ export default function Home() {
               motos
               para
               principiantes  </h2>
-            <button onClick={()=> setShowModal(true)}>
-              Descargar
-            </button>
+            <Link href={'/mejores-tips'}>
+              <a>
+                <button>
+                  Descargar
+                </button>
+
+              </a>
+            </Link>
           </div>
         </section>
         <section id={styles.hero_footer}>
@@ -359,10 +365,10 @@ export default function Home() {
               pasión motera?
             </h2>
             <p>
-              Escríbenos para conocer cuales<br/>
+              Escríbenos para conocer cuales<br />
               son tus problemas y necesidades
             </p>
-            <button onClick={()=> setShowModal(true)}>
+            <button onClick={() => setShowModal(true)}>
               Contáctanos
             </button>
 
