@@ -8,73 +8,71 @@ import NavBar from "./shared/navbar";
 
 
 export default function Tips(props) {
-    const router = useRouter()
-    const { register, handleSubmit } = useForm()
-    const formId = '3'
+  const router = useRouter()
+  const { register, handleSubmit } = useForm()
+  const formId = '3'
 
 
-    const OnSubmit = async (res) => {
-        console.log({ res });
-        let data = {
-            'firstname': res.firstname,
-            'lastname': res.lastname,
-            'field[1]': res.field,
-            'email': res.email,
-            'phone': res.phone,
-        }
-        console.log(data);
-
-        handleActiveCampaignSubmit(data, 'zotian1', formId)
-        router.push('api/getPDF')
-
-
+  const OnSubmit = async (res) => {
+    console.log({ res });
+    let data = {
+      'firstname': res.firstname,
+      'lastname': res.lastname,
+      'field[1]': res.field,
+      'email': res.email,
+      'phone': res.phone,
     }
-    return (
-        <div>
-            <NavBar />
-            <div className={styles.container}>
-                {/* <a href="/api/getPDF">aa</a> */}
-                <h1>Las mejores motos para principiantes</h1>
-                <div className={styles.lead}>
-                    <div className={styles.leadimg}>
-                        <img src="/img/magnet_reference.png" alt="Lead Magnet Zotian" />
+    console.log(data);
 
-                    </div>
-                    <div className={styles.leadform}>
-                        <div className={styles.form}>
-                            <form className={styles.form} onSubmit={handleSubmit(OnSubmit)}>
-                                <ActiveCampaignInputs formId={formId} />
-
-                                <label htmlFor="firstname">Nombre</label>
-                                <input type="text" id="firstname" name="firstname" placeholder="Ingresa tu nombre" {...register('firstname', { required: true })} required />
-
-                                <label>Apellidos</label>
-                                <input type="text" id="lastname" name="lastname" placeholder="Ingresa tu apellido" {...register('lastname', { required: true })} required />
-
-                                <label>País</label>
-                                <input type="text" id="field[1]" name="field[1]" placeholder="Ingresa tu país" {...register('field', { required: true })} required />
-
-                                <label>Email</label>
-                                <input name="email" type="email" id="email" placeholder="Ingresa tu correo" {...register('email', { required: true })} required />
-
-                                <label>Teléfono</label>
-                                <input name="phone" type="number" id="phone" placeholder="Ingresa tu teléfono" {...register('phone', { required: true })} required />
-                                <a href="/api/getPDF">
-
-                                    <button id="modalbutton" type="submit">Descargar</button>
-                                </a>
-
-                            </form>
-                        </div>
-
-                    </div>
+    handleActiveCampaignSubmit(data, 'zotian1', formId)
+    router.push('api/getPDF')
 
 
-                </div>
+  }
+  return (
+    <div>
+      <NavBar />
+      <div className={styles.container}>
+        {/* <a href="/api/getPDF">aa</a> */}
+        <h1>Las 10 mejores motos para principiantes</h1>
+        <div className={styles.lead}>
+          <div className={styles.leadimg}>
+            <img src="/img/magnet_reference.png" alt="Lead Magnet Zotian" />
+
+          </div>
+          <div className={styles.leadform}>
+            <div className={styles.form}>
+              <form className={styles.form} onSubmit={handleSubmit(OnSubmit)}>
+                <ActiveCampaignInputs formId={formId} />
+
+                <label htmlFor="firstname">Nombre</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Ingresa tu nombre" {...register('firstname', { required: true })} required />
+
+                <label>Apellidos</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Ingresa tu apellido" {...register('lastname', { required: true })} required />
+
+                <label>País</label>
+                <input type="text" id="field[1]" name="field[1]" placeholder="Ingresa tu país" {...register('field', { required: true })} required />
+
+                <label>Email</label>
+                <input name="email" type="email" id="email" placeholder="Ingresa tu correo" {...register('email', { required: true })} required />
+
+                <label>Teléfono</label>
+                <input name="phone" type="number" id="phone" placeholder="Ingresa tu teléfono" {...register('phone', { required: true })} required />
+                <button type="submit">Descargar</button>
+
+
+              </form>
             </div>
-            <Footer />
+
+          </div>
+
+
         </div>
-    )
+      </div>
+      <Footer />
+    </div>
+  )
 }
 
 {/*

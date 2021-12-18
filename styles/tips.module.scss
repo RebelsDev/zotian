@@ -38,6 +38,16 @@
         margin-bottom: 10px;
         font-family: "Cabify Circular", sans-serif;
     }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
     button {
         padding: 10px 20px;
         border-radius: 20px;
