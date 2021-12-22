@@ -350,7 +350,12 @@ export default function Home() {
         </section>
         <section id={styles.lead_magnet}>
           <div className={styles.container}>
-            <h2>LAS 10
+            <h2 id='mobile' >LAS 10 <br/>
+              mejores<br/>
+              motos<br/>
+              para<br/>
+              principiantes  </h2>
+            <h2 id='desktop'>LAS 10
               mejores
               motos
               para
