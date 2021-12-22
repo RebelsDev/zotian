@@ -1,7 +1,7 @@
 @import "variables.module";
 
 .container {
-  padding: 60px 8vw;
+  padding: 40px 8vw;
 }
 
 #hero {
@@ -30,12 +30,15 @@
   }
   img {
     width: 50%;
-    padding-bottom: 6px;
+    margin-bottom: 20px;
+    box-shadow: rgba(56, 56, 57, 0.8) 0px 0px 29px 0px;
+    border-radius: 100px;
   }
   .miedos_elements {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
   }
 }
 
