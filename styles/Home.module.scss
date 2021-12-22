@@ -363,6 +363,8 @@
   }
   #propuesta {
     .container {
+      padding-top: 7vh;
+      padding-bottom: 7vh;
       margin: auto;
       max-width: 1300px;
     }
@@ -389,6 +391,9 @@
     }
     h2 {
       font-size: clamp(2.0625rem, 1.7708rem + 0.6076vw, 2.5rem);
+    }
+    .secondary_slider{
+      padding-bottom: 0px;
     }
   }
 
@@ -499,7 +504,7 @@
     button {
       padding: 20px 45px;
       // 22 a 35
-      font-size: clamp(1.375rem, 0.8333rem + 1.1285vw, 2.0875rem);
+      font-size: clamp(1.3735rem, 0.8333rem + 1.1285vw, 1.675rem);
     }
     img {
       position: absolute;
