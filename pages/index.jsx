@@ -90,12 +90,20 @@ export default function Home() {
           <div className={styles.container}>
             <div className={styles.hero_text}>
 
-              <h1>
+              <h1 id='desktop'>
                 Contamos con todo<br />
                 lo necesario para que<br />
                 puedas disfrutar de<br />
                 tu pasión motera<br />
                 sin fronteras.<br />
+
+              </h1>
+              <h1 id='mobile'>
+                Contamos con todo
+                lo necesario para que
+                puedas disfrutar de
+                tu pasión motera
+                sin fronteras.
 
               </h1>
               <p className='subtitle'>Te ofrecemos motos, repuestos,<br />
@@ -174,7 +182,7 @@ export default function Home() {
 
               <h2>Somos <br />Zotian</h2>
               <p>
-                Somos una empresa de trayectoria<br />
+                Somos una empresa de larga trayectoria<br />
                 en el mercado peruano.
               </p>
               <p>

@@ -13,23 +13,32 @@
     padding: 0px 15px;
 
     .logo {
+        display: flex;
+        // justify-self: center;
+        align-items: center;
         h1{
+            margin-top: 3%;
             margin-bottom: auto !important;
 
             color: white;
             font-family: 'Cocogoose',Helvetica, sans-serif;
             text-transform: uppercase;
             font-size: 3.6vh;
-            line-height: 3.6vh;
+            line-height: 3.3vh;
+            vertical-align:middle;
         }
     }
 
     .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg {
             color: white;
             fill: white;
-
+            height: 50%;
             width: 22px;
+            line-height: 22px;
             gap: 10px;
             margin-left: 10px;
             // margin-right: 10px;
