@@ -49,13 +49,14 @@
   }
   img {
     width: 85%;
-    // padding-bottom: 3px;
+    padding-bottom: 5px;
   }
   p {
     margin: auto;
     width: 70%;
   }
   .deseos_elements {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;

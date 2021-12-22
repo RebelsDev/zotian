@@ -159,9 +159,9 @@ export default function Home() {
               </div>
               <div className={styles.deseos_element}>
                 <img src="/img/deseos_3_419x511.webp" height={419} width={511} alt="Información detallada" />
-                <p>Información clara
-                  y detallada de los
-                  productos que ofrecen.</p>
+                <p>Cumplimiento de la
+                    documentación y del
+                    servicio postventa.</p>
               </div>
             </div>
           </div>
