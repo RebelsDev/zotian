@@ -29,7 +29,7 @@ export default function Tips(props) {
 
     handleActiveCampaignSubmit(data, 'zotian1', formId)
     // router.push('api/getPDF')
-    const [show, setShow] = useState(true)
+    setShow(true)
 
   }
   return (
