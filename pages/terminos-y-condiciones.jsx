@@ -70,7 +70,9 @@ export default function Terminos() {
                     </p>
                 </div>
             </div>
-            <Footer />
+            <footer  id="stick_footer" >
+                <Footer />
+            </footer>
         </>
     )
 }

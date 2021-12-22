@@ -44,7 +44,9 @@ export default function Politicas() {
                     </p>
                 </div>
             </div>
-            <Footer />
+            <footer  id="stick_footer" >
+                <Footer />
+            </footer>
         </>
     )
 }

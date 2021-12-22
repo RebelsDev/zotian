@@ -243,6 +243,13 @@ button {
 }
 }
 
+@media (min-height: 900px) {
+    #stick_footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
 @font-face {
     font-family: "Cabify Circular";
     src: local("Cabify Circular Book"), local("CabifyCircular-Book"),

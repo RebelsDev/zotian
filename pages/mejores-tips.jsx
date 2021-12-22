@@ -70,7 +70,13 @@ export default function Tips(props) {
 
         </div>
       </div>
-      <Footer />
+      <footer id="stick_footer" >
+
+        <Footer />
+
+       
+
+      </footer>
     </div>
   )
 }
