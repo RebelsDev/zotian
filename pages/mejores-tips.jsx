@@ -2,12 +2,15 @@ import { ActiveCampaignInputs, handleActiveCampaignSubmit } from 'active-campaig
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 import styles from "./../styles/tips.module.scss";
+import ModalLead from './modalLead';
 import Footer from "./shared/footer";
 import NavBar from "./shared/navbar";
+import { useState } from 'react';
 // import getPDF from "./api/getPDF";
 
 
 export default function Tips(props) {
+  const [show, setShow] = useState(false)
   const router = useRouter()
   const { register, handleSubmit } = useForm()
   const formId = '3'
@@ -25,13 +28,19 @@ export default function Tips(props) {
     console.log(data);
 
     handleActiveCampaignSubmit(data, 'zotian1', formId)
-    router.push('api/getPDF')
-
+    // router.push('api/getPDF')
+    const [show, setShow] = useState(true)
 
   }
   return (
     <div>
       <NavBar />
+       <ModalLead
+                onClose={() => setShow(false)}
+                show={show}
+                title={"Gracias por llenar nuestro formulario, te hemos enviado un correo electrónico con el PDF gratuito"}
+                text={""}
+            />
       <div className={styles.container}>
         {/* <a href="/api/getPDF">aa</a> */}
         <h1>como escoger la motocicleta adecuada</h1>
