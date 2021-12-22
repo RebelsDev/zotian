@@ -34,7 +34,7 @@ export default function Tips(props) {
       <NavBar />
       <div className={styles.container}>
         {/* <a href="/api/getPDF">aa</a> */}
-        <h1>Las 10 mejores motos para principiantes</h1>
+        <h1>como escoger la motocicleta adecuada</h1>
         <div className={styles.lead}>
           <div className={styles.leadimg}>
             <img src="/img/magnet_reference.png" alt="Lead Magnet Zotian" />
@@ -74,7 +74,7 @@ export default function Tips(props) {
 
         <Footer />
 
-       
+
 
       </footer>
     </div>
