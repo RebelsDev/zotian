@@ -221,6 +221,8 @@
   }
   button{
     margin-top: 3.7vh;
+    font-size: clamp(0.8125rem, 0.4792rem + 1.6667vw, 1rem);
+    padding: 5% 9%;
   }
 }
 
