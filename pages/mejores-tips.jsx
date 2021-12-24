@@ -46,7 +46,7 @@ export default function Tips(props) {
         <h1>como escoger la motocicleta adecuada</h1>
         <div className={styles.lead}>
           <div className={styles.leadimg}>
-            <img src="/img/magnet_reference.png" alt="Lead Magnet Zotian" />
+            <img src="/img/magnet_reference.webp" alt="Lead Magnet Zotian" />
 
           </div>
           <div className={styles.leadform}>
