@@ -5,7 +5,6 @@ export default function NavBar() {
     return (
         <div className={styles.navbar}>
             <div className={styles.container}>
-
                 <Link href="/">
                     <a>
                         <div className={styles.logo}>
@@ -24,7 +23,7 @@ export default function NavBar() {
                         </svg>
 
                     </a>
-                    <a href="https://www.facebook.com/DogoPhotograph/" target="_blank" rel="noopener noreferrer" aria-label='Diego Farfan Facebook'>
+                    <a href="https://www.facebook.com/zotian.motorshonda" target="_blank" rel="noopener noreferrer" aria-label='Diego Farfan Facebook'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="33.364" height="33.102" viewBox="0 0 43.364 43.102">
                             <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M1865.191,73.544a21.682,21.682,0,1,0-25.07,21.42V79.812h-5.508V73.544h5.508V68.767c0-5.434,3.235-8.435,8.19-8.435a33.4,33.4,0,0,1,4.854.423v5.334h-2.735c-2.693,0-3.533,1.671-3.533,3.386v4.069h6.013l-.962,6.268H1846.9V94.964A21.69,21.69,0,0,0,1865.191,73.544Z" transform="translate(-1821.827 -51.862)"/>
                         </svg>

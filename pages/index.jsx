@@ -200,6 +200,13 @@ export default function Home() {
               <p className={styles.last}>
                 ¡Estas en el lugar correcto!
               </p>
+              <p>Te ofrecemos:<br />
+
+                · Servicio técnico especializado<br />
+                · Mantenimiento correctivo y preventivo<br />
+                · Escaner y limpiador de inyectores<br />
+                · Instalación de alarmas<br />
+                · Reparación total </p>
             </div>
           </div>
           <img src="/img/quien_soy_1_1800x1195.webp" height={1800} width={1195} alt="Zotian Moto" />
@@ -350,12 +357,12 @@ export default function Home() {
         </section>
         <section id={styles.lead_magnet}>
           <div className={styles.container}>
-            <h2 id='mobile' >como<br/>
-              escoger la<br/>
-              motocicleta<br/>
+            <h2 id='mobile' >como<br />
+              escoger la<br />
+              motocicleta<br />
               adecuada</h2>
             <h2 id='desktop'>como
-              escoger la<br/>
+              escoger la<br />
               motocicleta
               adecuada</h2>
             <Link href={'/mejores-tips'}>
