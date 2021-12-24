@@ -116,6 +116,8 @@ export default function Home() {
             </div>
 
           </div>
+          <img className={styles.marcas} id='mobile' src="/img/marcas_mobile.svg" alt="Honda Susuki Jettor Benelli IPONE" />
+          <img className={styles.marcas} id='desktop' src="/img/marcas_desktop.svg" alt="Honda Susuki Jettor Benelli IPONE" />
         </section>
         <section id={styles.miedos}>
           <div className={styles.container}>
