@@ -11,7 +11,7 @@ const Modal = (props) => {
     const onSubmit = async (data) => {
         handleActiveCampaignSubmit(data, 'zotian1', formId)
         console.log(data);
-        window.location.assign('https://wa.me/924523178')
+        window.location.assign('https://wa.me/51991522698')
 
     }
 

@@ -168,8 +168,8 @@ export default function Home() {
               <div className={styles.deseos_element}>
                 <img src="/img/deseos_3_419x511.webp" height={419} width={511} alt="Información detallada" />
                 <p>Cumplimiento de la
-                    documentación y del
-                    servicio postventa.</p>
+                  documentación y del
+                  servicio postventa.</p>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
                 garantía y asesoramiento...
               </p>
               <p className={styles.last}>
-                !Estas en el lugar correcto!
+                ¡Estas en el lugar correcto!
               </p>
             </div>
           </div>
@@ -350,16 +350,14 @@ export default function Home() {
         </section>
         <section id={styles.lead_magnet}>
           <div className={styles.container}>
-            <h2 id='mobile' >LAS 10 <br/>
-              mejores<br/>
-              motos<br/>
-              para<br/>
-              principiantes  </h2>
-            <h2 id='desktop'>LAS 10
-              mejores
-              motos
-              para
-              principiantes  </h2>
+            <h2 id='mobile' >como<br/>
+              escoger la<br/>
+              motocicleta<br/>
+              adecuada</h2>
+            <h2 id='desktop'>como
+              escoger la<br/>
+              motocicleta
+              adecuada</h2>
             <Link href={'/mejores-tips'}>
               <a>
                 <button>
