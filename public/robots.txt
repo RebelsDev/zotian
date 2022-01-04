@@ -1,0 +1,6 @@
+Sitemap: https://zotianmotors.com/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
