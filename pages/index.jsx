@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Zotian</title>
+        <title>Zotian Motors - Repuestos y Servicios de Motocicletas AQP</title>
       </Head>
 
       <nav>
