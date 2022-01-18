@@ -30,9 +30,11 @@
     }
 
     .contact {
-        color: white;
         p{
+            color: white;
             padding-right: 7vw;
+            margin: 0;
+            margin-bottom: -2%;
         }
         display: flex;
         align-items: center;
