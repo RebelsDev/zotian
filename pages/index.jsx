@@ -112,7 +112,7 @@ export default function Home() {
             </div>
 
             <div className={styles.hero_img}>
-              <img src="/img/hero_main_816x603.webp" alt="Moto Zotian Suzuki" />
+              <img src="/img/hero_main.webp" alt="Moto Zotian Suzuki" />
             </div>
 
           </div>
