@@ -15,6 +15,13 @@
     padding: 0px 15px;
 
     .logo {
+        position: relative;
+        img{
+            height: 5vh;
+            width: auto;
+
+
+        }
         display: flex;
         // justify-self: center;
         align-items: center;

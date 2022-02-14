@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.scss'
 
@@ -8,9 +9,7 @@ export default function NavBar() {
                 <Link href="/">
                     <a>
                         <div className={styles.logo}>
-                            <h1>
-                                ZOTIAN
-                            </h1>
+                            <img id={styles.logo} src="img/logo.svg" alt="Zotian Motors" />
                         </div>
 
                     </a>
