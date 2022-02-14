@@ -1,5 +1,7 @@
+@import "variables.module";
+
 .navbar{
-    background-color: black;
+    background-color: $red;
 }
 .container {
     color: white;

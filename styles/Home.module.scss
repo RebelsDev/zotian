@@ -5,6 +5,9 @@
 }
 
 #hero {
+  h1{
+    color: $black;
+  }
   .container {
     // min-height: 92vh;
     padding-top: 6vh;
@@ -24,7 +27,7 @@
 
 #miedos {
   text-align: center !important;
-  background-color: $accent-color;
+  background-color: $red;
   h2,
   p {
     color: white;
