@@ -523,7 +523,7 @@
       margin-top: 3vh;
       width: 60%;
       // 40px a 75px
-      font-size: clamp(2.5rem, 1.0417rem + 3.0382vw, 4rem);
+              font-size: 4.7vw;
 
       margin-bottom: 0px;
     }
@@ -534,12 +534,12 @@
       margin-top: 3vh;
       width: 55%;
       // 30 a 45px
-      font-size: clamp(1.875rem, 1.25rem + 1.3021vw, 2.1125rem);
+      font-size: 2vw;
     }
     button {
       padding: 20px 45px;
       // 22 a 35
-      font-size: clamp(1.3735rem, 0.8333rem + 1.1285vw, 1.675rem);
+      font-size: 1.5vw;
     }
     img {
       position: absolute;
